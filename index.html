@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рустам Кашапов — портфолио студента</title>
+  <meta name="description" content="Портфолио студента ГУАП: учебные проекты по информатике, навыки и контакты.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="На главную">
+        <img src="img/logo.svg" alt="" width="36" height="36">
+        <span>Рустам&nbsp;К.</span>
+      </a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu">
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Главная -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__tag">Студент ГУАП · 1 курс</p>
+          <h1>Учусь делать понятные и&nbsp;аккуратные цифровые продукты</h1>
+          <p class="hero__lead">Привет! Я Рустам. Здесь собраны мои учебные проекты первого семестра: от заметок в Obsidian и канбан-доски до первых сайтов на HTML и CSS.</p>
+          <a href="#portfolio" class="btn">Смотреть работы</a>
+          <a href="#contacts" class="btn btn--ghost">Написать мне</a>
+        </div>
+        <img class="hero__art" src="img/hero.svg" alt="Иллюстрация: окно редактора кода" width="420" height="320">
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section" id="about">
+      <div class="container about">
+        <figure class="about__photo">
+          <picture>
+            <source type="image/webp"
+                    srcset="img/about-board-480.webp 480w, img/about-board-full.webp 910w"
+                    sizes="(max-width: 768px) 100vw, 45vw">
+            <img src="img/about-board-full.webp" alt="Моя канбан-доска проекта «Учебный планер» в Kaiten" width="910" height="792" loading="lazy">
+          </picture>
+          <figcaption>Моя доска проекта в Kaiten — так я планирую работу</figcaption>
+        </figure>
+        <div class="about__text">
+          <h2>Обо мне</h2>
+          <p>Я учусь на первом курсе Санкт-Петербургского государственного университета аэрокосмического приборостроения. В IT меня больше всего привлекает момент, когда идея из головы превращается в работающую вещь, которой может пользоваться другой человек.</p>
+          <p>В этом семестре я научился вести базу знаний в Obsidian, планировать проект по методу Kanban, обрабатывать данные в таблицах и оформлять отчёты по ГОСТ. Этот сайт я сверстал вручную: без конструктора, чтобы разобраться, как устроены меню, сетка и формы.</p>
+          <p>Сейчас хочу подтянуть JavaScript и Git, а к концу года сделать небольшое веб-приложение для учёбы.</p>
+          <ul class="skills">
+            <li><img src="img/icon-code.svg" alt="" width="24" height="24">HTML, CSS, основы JS</li>
+            <li><img src="img/icon-notes.svg" alt="" width="24" height="24">Obsidian, Markdown</li>
+            <li><img src="img/icon-board.svg" alt="" width="24" height="24">Kaiten, Kanban</li>
+            <li><img src="img/icon-doc.svg" alt="" width="24" height="24">Отчёты по ГОСТ</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <h2>Портфолио</h2>
+        <p class="section__lead">Скриншоты моих лабораторных работ по информатике. Нажми на работу, чтобы открыть её крупнее.</p>
+        <div class="gallery">
+          <a class="gallery__item" href="img/work-obsidian-full.webp">
+            <img src="img/work-obsidian-480.webp" srcset="img/work-obsidian-480.webp 480w, img/work-obsidian-full.webp 830w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" alt="Конспект в Obsidian" width="480" height="351" loading="lazy">
+            <span>Конспект в Obsidian</span>
+          </a>
+          <a class="gallery__item" href="img/work-graph-full.webp">
+            <img src="img/work-graph-480.webp" srcset="img/work-graph-480.webp 480w, img/work-graph-full.webp 573w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" alt="Граф связей заметок" width="480" height="529" loading="lazy">
+            <span>Граф связей заметок</span>
+          </a>
+          <a class="gallery__item" href="img/work-chart-full.webp">
+            <img src="img/work-chart-480.webp" srcset="img/work-chart-480.webp 480w, img/work-chart-full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" alt="Диаграмма средних баллов в таблице" width="480" height="152" loading="lazy">
+            <span>Диаграммы в электронной таблице</span>
+          </a>
+          <a class="gallery__item" href="img/work-vscode-full.webp">
+            <img src="img/work-vscode-480.webp" srcset="img/work-vscode-480.webp 480w, img/work-vscode-full.webp 960w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" alt="Первый сайт в VS Code" width="480" height="301" loading="lazy">
+            <span>Первый сайт в VS Code</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section" id="contacts">
+      <div class="container contacts">
+        <div>
+          <h2>Контакты</h2>
+          <p>Открыт к учебным проектам, хакатонам и командной работе. Напиши через форму или свяжись напрямую.</p>
+          <p class="contacts__line"><img src="img/icon-phone.svg" alt="" width="22" height="22"><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+          <p class="contacts__line"><img src="img/icon-mail.svg" alt="" width="22" height="22"><a href="mailto:example@mail.ru">example@mail.ru</a></p>
+        </div>
+        <form class="form" id="feedback" novalidate>
+          <label>Имя
+            <input type="text" name="name" required placeholder="Как к тебе обращаться">
+          </label>
+          <label>Email
+            <input type="email" name="email" required placeholder="name@mail.ru">
+            <small class="form__error" id="email-error" aria-live="polite"></small>
+          </label>
+          <label>Сообщение
+            <textarea name="message" rows="5" required placeholder="Текст сообщения"></textarea>
+          </label>
+          <button class="btn" type="submit">Отправить</button>
+          <p class="form__status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Рустам Кашапов. Сайт-портфолио сверстан вручную.</p>
+      <div class="footer__contacts">
+        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+        <a href="mailto:example@mail.ru">example@mail.ru</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/Yenkolisss" target="_blank" rel="noopener" aria-label="GitHub"><img src="img/icon-github.svg" alt="GitHub" width="28" height="28"></a>
+        <a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><img src="img/icon-telegram.svg" alt="Telegram" width="28" height="28"></a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" aria-label="ВКонтакте"><img src="img/icon-vk.svg" alt="ВКонтакте" width="28" height="28"></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" type="button" aria-label="Закрыть">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
